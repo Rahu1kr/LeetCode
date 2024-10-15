@@ -20,13 +20,12 @@ public:
         int profit = 0;
 
         for(int i=1; i<prices.size(); i++){
-            if(profit<prices[i] - minprice){
-                profit = prices[i] - minprice;
-            }
 
             if(minprice>prices[i]){
                 minprice = prices[i];
             }
+
+            profit = max(profit,prices[i] - minprice);
 
         }
         return profit;
