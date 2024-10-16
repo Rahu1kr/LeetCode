@@ -14,6 +14,6 @@ public:
                 e = mid - 1;
             }
         }
-        return e;
+        return s-1;
     }
 };
