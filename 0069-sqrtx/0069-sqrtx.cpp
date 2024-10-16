@@ -9,7 +9,7 @@ public:
             mid = s + (e-s)/2;
             if((long)mid*mid == (long)x){
                 return mid;
-            }else if(mid*mid < x){
+            }else if((long)mid*mid < (long)x){
                 s = mid + 1;
             }else{
                 e = mid - 1;
